@@ -1,5 +1,6 @@
 <script>
   	import { fly } from 'svelte/transition';
+    import Locations from './Locations.svelte'
 	  
     let visible = false;
     let display = 'none';
@@ -7,16 +8,16 @@
 
     function expandMenu(){
       visible = !visible;
-      visible ? display = 'block' : display = 'none';
+      visible ? display = 'flex' : display = 'none';
     }
 </script>
 
 
-<div class="timeline-toggle" on:click={expandMenu}></div>
+<div class="timeline-toggle" on:click={expandMenu}>TIMELINE</div>
 
 {#if visible}
 <div class="timeline-bar" on:click={expandMenu} style="display: {display}" transition:fly="{{ y: 70, duration: 1000 }}">
-<p>Timeline</p>
+<Locations />
 </div>
 {/if}
 
@@ -26,18 +27,20 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .timeline-toggle{
   background-color: purple;
   height: 25px;
+  color: white;
+  padding: 2px;
 }
 
 .timeline-bar {
   display: none;
-  height: 200px;
-  background-color: blue;
+  height: 300px;
+  background-color: white;
+  overflow-y:auto;
+  justify-content: center;
 }
 
 /* .footer-menu:hover + .timeline-bar {
