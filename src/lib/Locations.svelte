@@ -1,53 +1,70 @@
 <style>
-
 ul{
     text-align: left;
     list-style: none;
 }
-/*
-ul li::marker {
-    font-size: 0.80em;
-} */
 </style>
 
 <script>
+import { storedlocation, index } from './stores.js'
+import { formatTime } from './Timer.svelte'
+
 const locations = 
     [{
+        name: 'Movie Start',
+        start: 0,
+        end: 3,
+        short:'Home'
+    },
+    {
         name: 'Balinese Tari Legong dancers, Indonesia',
-        start: '00:00:20',
-        end: '00:00:28',
+        start: 5,
+        end: 8,
         short:'Indonesia'
     },
     {
         name: 'Kilauea Volcano, Hawaii',
-        start: '00:01:50',
-        end: '00:01:58',
+        start: 10,
+        end: 13,
         short:'Hawaii'
     },
     {
         name: 'The Museum of Egyptian Antiquities',
-        start: '00:04:30',
-        end: '00:04:38',
+        start: 15,
+        end: 18,
         short:'Egypt'
     },
     {
         name: 'Popa Taungkalat Monastery, Bagan Myanmar',
-        start: '00:05:35',
-        end: '00:05:43',
+        start: 20,
+        end: 23,
         short:'Myanmar'
     },
     {
         name: 'Bagan, Myanmar',
-        start: '00:05:51',
-        end: '00:05:59',
+        start: 25,
+        end: 28,
         short:'Myanmar 2'
     }]
+
+    $: $index, changeLocation();
+
+    function changeLocation(){
+        $storedlocation = locations[$index]
+    }
 </script>
 
+<p>Index: {$index} Current Location: {$storedlocation.name}</p>
 
 <ul>
     {#each locations as location}
-        <li>{location.start} - {location.name}</li>
+            <li>{#if $storedlocation == location}
+                    <strong>{formatTime(location.start)} - {location.name}</strong>
+                {:else}
+                    {formatTime(location.start)} - {location.name}
+                {/if}
+            </li>
+
     {/each}
 </ul>
 
