@@ -5,7 +5,6 @@
 
 <main>
   <h1>Samsara Companion</h1>
-  <!-- <Locations /> -->
   <Timer />
   <Timeline />
 

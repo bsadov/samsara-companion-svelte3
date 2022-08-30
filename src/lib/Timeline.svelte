@@ -1,19 +1,20 @@
 <script>
-  	import { fly } from 'svelte/transition';
-    import { seconds, storedlocations, storedcurrent, index } from './stores.js'
+    import { seconds, storedcurrent, storedlocations } from './stores.js'
     import { formatTime } from './Timer.svelte'
 	  
+  	/* import { fly } from 'svelte/transition'; */
+
+    /*
     let visible = false;
     let display = 'none';
 
     function expandMenu(){
       visible = !visible;
       visible ? display = 'flex' : display = 'none';
-    }
+    }*/
 
     function selectLocation(location){
       $storedcurrent = location
-      $index = location.key
       $seconds = location.start
     }
 </script>
@@ -28,14 +29,13 @@
 {/if} -->
 
 
-<div class="timeline-bar" transition:fly="{{ y: 70, duration: 1000 }}">
-  <p>Index: {$index} Current Location: {$storedcurrent.name}</p>
+<div class="timeline-bar">
   <ul>
     {#each $storedlocations as location}
-      <li on:click={() => selectLocation(location)}>{#if $storedcurrent == location}
-            <strong>{formatTime(location.start)} - {location.name}</strong>
+      <li on:click={() => selectLocation(location)}>{#if $seconds >= location.start && $seconds < location.end}
+            <strong>[{formatTime(location.start)}] {location.name}</strong>
           {:else}
-            {formatTime(location.start)} - {location.name}
+            [{formatTime(location.start)}] {location.name}
           {/if}
       </li>
     {/each}
@@ -43,30 +43,40 @@
 </div>
 
 <style>
-/* .timeline-toggle, */ .timeline-bar{
-  position: fixed;
-  /* bottom: 0; */
-  left: 0;
-  width: 100%;
-}
-
-/* .timeline-toggle{
-  background-color: purple;
-  height: 25px;
-  color: white;
-  padding: 2px;
-} */
-
 .timeline-bar {
-  /* display: none;
-  height: 300px; */
-  background-color: white;
-  overflow-y:auto;
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+	width: 30%;
+  overflow-wrap: break-word;
 }
 
 ul{
   text-align: left;
   list-style: none;
 }
+
+/* .timeline-toggle, .timeline-bar{
+  position: fixed;
+  /* bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.timeline-toggle{
+  background-color: purple;
+  height: 25px;
+  color: white;
+  padding: 2px;
+}
+
+.timeline-bar {
+   display: none;
+  height: 300px; 
+  background-color: white;
+  overflow-y:auto;
+  justify-content: center;
+}*/
 </style>

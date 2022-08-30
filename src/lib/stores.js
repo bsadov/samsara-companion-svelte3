@@ -1,7 +1,6 @@
 import { writable } from 'svelte/store';
 
 export let seconds = writable(0)
-export let index = writable(0)
 
 const current = 
 {
