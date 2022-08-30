@@ -1,6 +1,6 @@
 <script>
   	import { fly } from 'svelte/transition';
-    import { storedlocations, storedcurrent, index } from './stores.js'
+    import { seconds, storedlocations, storedcurrent, index } from './stores.js'
     import { formatTime } from './Timer.svelte'
 	  
     let visible = false;
@@ -11,10 +11,10 @@
       visible ? display = 'flex' : display = 'none';
     }
 
-    $: $index, changeLocation()
-
-    function changeLocation(){
-      $storedcurrent = $storedlocations[$index]
+    function selectLocation(location){
+      $storedcurrent = location
+      $index = location.key
+      $seconds = location.start
     }
 </script>
 
@@ -31,22 +31,21 @@
 <div class="timeline-bar" transition:fly="{{ y: 70, duration: 1000 }}">
   <p>Index: {$index} Current Location: {$storedcurrent.name}</p>
   <ul>
-      {#each $storedlocations as location}
-              <li>{#if $storedcurrent == location}
-                      <strong>{formatTime(location.start)} - {location.name}</strong>
-                  {:else}
-                      {formatTime(location.start)} - {location.name}
-                  {/if}
-              </li>
-  
-      {/each}
+    {#each $storedlocations as location}
+      <li on:click={() => selectLocation(location)}>{#if $storedcurrent == location}
+            <strong>{formatTime(location.start)} - {location.name}</strong>
+          {:else}
+            {formatTime(location.start)} - {location.name}
+          {/if}
+      </li>
+    {/each}
   </ul>
 </div>
 
 <style>
 /* .timeline-toggle, */ .timeline-bar{
   position: fixed;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   width: 100%;
 }
@@ -59,8 +58,8 @@
 } */
 
 .timeline-bar {
-  /* display: none; */
-  height: 300px;
+  /* display: none;
+  height: 300px; */
   background-color: white;
   overflow-y:auto;
   justify-content: center;

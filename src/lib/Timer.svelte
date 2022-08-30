@@ -26,6 +26,9 @@
         if($seconds == $storedcurrent.end){
             $index += 1
         }
+        if($seconds == $storedlocations[$index].start){
+            $storedcurrent = $storedlocations[$index]
+        }
     }
 
     function forcedTimeChange(){

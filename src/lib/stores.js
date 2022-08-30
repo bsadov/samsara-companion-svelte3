@@ -54,6 +54,20 @@ const locations =
         start: 25,
         end: 28,
         short:'Myanmar 2'
+    },
+    {
+        name: 'Thiksey Monastery, Leh Ladakh India',
+        key: 6,
+        start: 30,
+        end: 33,
+        short:'India'
+    },
+    {
+        name: 'Mt. Nemrut National Park, Adiyaman, Turkey',
+        key: 7,
+        start: 35,
+        end: 38,
+        short:'Turkey'
     }]
 
 
