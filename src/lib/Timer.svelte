@@ -1,13 +1,13 @@
 <script>
-    import { storedseconds, storedlocation, index} from './stores.js'
+    import { seconds, storedcurrent, storedlocations, index} from './stores.js'
 
-    export let seconds = 0
+
     let stopwatch
     let active = false
 
     function runTimer(){
         active = true
-        stopwatch = setInterval(() => { seconds += 1; checkLocation()}, 1000)
+        stopwatch = setInterval(() => { $seconds += 1; checkLocation()}, 1000)
     }
 
     function pauseTimer(){
@@ -19,12 +19,21 @@
         active = false
         clearInterval(stopwatch)
         $index = 0
-        seconds = 0
+        $seconds = 0
     }
 
     function checkLocation(){
-        if($storedseconds == $storedlocation.end){
-            $index += 1;
+        if($seconds == $storedcurrent.end){
+            $index += 1
+        }
+    }
+
+    function forcedTimeChange(){
+        for(let location of $storedlocations){
+            if( $seconds >= location.start && $seconds < location.end){
+                $storedcurrent = location
+                $index = location.key
+            }
         }
     }
 </script>
@@ -32,15 +41,15 @@
     export function formatTime(e){
         const h = Math.floor(e / 3600).toString().padStart(2,'0'),
         m = Math.floor(e % 3600 / 60).toString().padStart(2,'0'),
-        s = Math.floor(e % 60).toString().padStart(2,'0');
+        s = Math.floor(e % 60).toString().padStart(2,'0')
 
-        return h + ':' + m + ':' + s;
+        return h + ':' + m + ':' + s
     }
 </script>
 
-<p>{formatTime(seconds)}</p>
-<p>Timer.svelte seconds: {seconds} | Stores.js seconds: {$storedseconds}</p>
-<input type=number bind:value={seconds} min=0 max=6120>
+<p>{formatTime($seconds)}</p>
+<p>Stores.js seconds: {$seconds}</p>
+<input type=number bind:value={$seconds} on:change={() => forcedTimeChange()} min=0 max=6120>
 
 <br>
 {#if !active}
