@@ -6,7 +6,7 @@
 <div class='info-container'>
     <p>{$storedcurrent.name}</p>
     <p>Location: {$storedcurrent.country}</p>
-    <img src='src/assets/{$storedcurrent.image}' alt='test'>
+    <img src='./{$storedcurrent.image}' alt='test'>
     <p>{$storedcurrent.info}</p>
 
 </div>
