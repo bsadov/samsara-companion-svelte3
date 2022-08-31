@@ -8,7 +8,10 @@ const current =
     key: 0,
     start: 0,
     end: 3,
-    short:'Home'
+    country:'None',
+    coordinates: [0,0],
+    info: '',
+    image: 'movieposter.jpg'
 }
 
 const locations = 
@@ -17,61 +20,93 @@ const locations =
         key: 0,
         start: 0,
         end: 3,
-        short:'Home'
+        country:'None',
+        coordinates: [0,0],
+        info: 'From Wikipedia: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985). Completed over a period of five years in 25 countries around the world, it was shot in 70 mm format and output to digital format. The film premiered at the 2011 Toronto International Film Festival and received a limited release in August 2012.',
+        image: 'movieposter.jpg'
     },
     {
-        name: 'Balinese Tari Legong dancers, Indonesia',
+        name: 'Balinese Tari Legong Dancers',
         key: 1,
         start: 5,
         end: 8,
-        short:'Indonesia'
+        country: 'Indonesia',
+        coordinates: [-8.585619926453, -8.585619926453],
+        info: 'Tri Pusaka Sakti Art Foundation http://pusakasaktiarts.com/',
+        image: 'movieposter.jpg'
     },
     {
-        name: 'Kilauea Volcano, Hawaii',
+        name: 'Kilauea Volcano',
         key: 2,
         start: 10,
         end: 13,
-        short:'Hawaii'
+        country:'Hawai\'i, Hawaii',
+        coordinates: [0, 0],
+        info: 'Pending...',
+        image: 'movieposter.jpg'
     },
     {
         name: 'The Museum of Egyptian Antiquities',
         key: 3,
         start: 15,
         end: 18,
-        short:'Egypt'
+        country:'Cairo, Egypt',
+        coordinates: [0, 0],
+        info: 'Pending...',
+        image: 'movieposter.jpg'
     },
     {
-        name: 'Popa Taungkalat Monastery, Bagan Myanmar',
+        name: 'Taung Kalat Monastery',
         key: 4,
         start: 20,
         end: 23,
-        short:'Myanmar'
+        country:'Mount Popa, Myanmar',
+        coordinates: [0, 0],
+        info: 'Pending...',
+        image: 'movieposter.jpg'
     },
     {
-        name: 'Bagan, Myanmar',
+        name: 'Old Bagan',
         key: 5,
         start: 25,
         end: 28,
-        short:'Myanmar 2'
+        country:'Old Bagan, Mandalay Region, Myanmar',
+        coordinates: [0, 0],
+        info: 'Pending...',
+        image: 'movieposter.jpg'
     },
     {
-        name: 'Thiksey Monastery, Leh Ladakh India',
+        name: 'Thiksey Monastery',
         key: 6,
         start: 30,
         end: 33,
-        short:'India'
+        country:'Leh, Ladakh Territory, India',
+        coordinates: [0, 0],
+        info: 'Pending...',
+        image: 'movieposter.jpg'
     },
     {
-        name: 'Mt. Nemrut National Park, Adiyaman, Turkey',
+        name: 'Mt. Nemrut National Park',
         key: 7,
         start: 35,
         end: 38,
-        short:'Turkey'
+        country:'Adiyaman, Turkey',
+        coordinates: [0, 0],
+        info: 'Pending...',
+        image: 'movieposter.jpg'
     }]
 
 
 export let storedcurrent = writable(current)
 export let storedlocations = writable(locations)
+
+export function formatTime(n){
+    const h = Math.floor(n / 3600).toString().padStart(2,'0'),
+    m = Math.floor(n % 3600 / 60).toString().padStart(2,'0'),
+    s = Math.floor(n % 60).toString().padStart(2,'0')
+
+    return h + ':' + m + ':' + s
+}
 
 
 

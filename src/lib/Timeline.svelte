@@ -1,6 +1,5 @@
 <script>
-    import { seconds, storedcurrent, storedlocations } from './stores.js'
-    import { formatTime } from './Timer.svelte'
+    import { seconds, storedcurrent, storedlocations, formatTime } from './stores.js'
 	  
   	/* import { fly } from 'svelte/transition'; */
 

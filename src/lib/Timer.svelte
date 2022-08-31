@@ -1,5 +1,5 @@
 <script>
-    import { seconds, storedcurrent, storedlocations } from './stores.js'
+    import { seconds, storedcurrent, storedlocations, formatTime } from './stores.js'
 
     let stopwatch
     let active = false
@@ -37,21 +37,11 @@
         }
     }
 </script>
-<script context='module'>
-    export function formatTime(e){
-        const h = Math.floor(e / 3600).toString().padStart(2,'0'),
-        m = Math.floor(e % 3600 / 60).toString().padStart(2,'0'),
-        s = Math.floor(e % 60).toString().padStart(2,'0')
 
-        return h + ':' + m + ':' + s
-    }
-</script>
-
-<p>Current Location: {$storedcurrent.name}</p>
+<p>Current Location: {$storedcurrent.country}</p>
 <p>{formatTime($seconds)} | stores.js: {$seconds}
     | Set time: <input type=number bind:value={$seconds} on:change={() => forcedTimeChange()} min=0 max=6120>
 </p>
-
 
 <br>
 {#if !active}
