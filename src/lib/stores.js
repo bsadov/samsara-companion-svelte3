@@ -1,7 +1,5 @@
 import { writable } from 'svelte/store';
 
-export let seconds = writable(0)
-
 const current = 
 {
     name: 'Movie Start',
@@ -96,7 +94,7 @@ const locations =
         image: 'movieposter.jpg'
     }]
 
-
+export let seconds = writable(0)
 export let storedcurrent = writable(current)
 export let storedlocations = writable(locations)
 

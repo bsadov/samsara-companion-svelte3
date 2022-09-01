@@ -36,6 +36,14 @@
             }
         }
     }
+
+    function nextLocation(){
+        if($storedcurrent.key+1 < $storedlocations.length){
+            $storedcurrent = $storedlocations[$storedcurrent.key+1]
+            $seconds = $storedcurrent.start
+        }
+    }
+    
 </script>
 
 <p>Current Location: {$storedcurrent.country}</p>
@@ -50,3 +58,4 @@
 <button on:click={pauseTimer}>Pause</button>
 {/if}
 <button on:click={resetTimer}>Reset</button>
+<button on:click={() => nextLocation()}>Next Location</button>
