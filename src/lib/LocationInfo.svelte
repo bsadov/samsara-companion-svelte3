@@ -13,14 +13,7 @@
 
 <style>
 .info-container{
-    background-color: lightgrey;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    overflow-y: auto;
-    width: 30%;
-    overflow-wrap: break-word;
+    max-width: 900px;
 }
 
 img{

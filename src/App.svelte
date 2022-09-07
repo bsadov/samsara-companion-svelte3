@@ -5,8 +5,8 @@
 </script>
 
 <main>
-  <h1>Samsara Companion</h1>
-  <Timer />
-  <Timeline />
-  <LocationInfo />
+    <h1>Samsara Companion</h1>
+    <Timeline />
+    <Timer />
+    <LocationInfo />
 </main>

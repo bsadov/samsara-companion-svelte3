@@ -37,25 +37,38 @@
         }
     }
 
+    function prevLocation(){
+        if($storedcurrent.key-1 >= 0){
+        $storedcurrent = $storedlocations[$storedcurrent.key-1]
+            $seconds = $storedcurrent.start
+        }
+    }
+
     function nextLocation(){
         if($storedcurrent.key+1 < $storedlocations.length){
             $storedcurrent = $storedlocations[$storedcurrent.key+1]
             $seconds = $storedcurrent.start
         }
     }
-    
 </script>
+<div class='timer'>
+    <p>{formatTime($seconds)}</p>
+    <!-- <input type=number bind:value={$seconds} on:change={() => forcedTimeChange()} min=0 max=6120> -->
+    <input type=range bind:value={$seconds} on:input={() => forcedTimeChange()} min=0 max=35>
 
-<p>Current Location: {$storedcurrent.country}</p>
-<p>{formatTime($seconds)} | stores.js: {$seconds}
-    | Set time: <input type=number bind:value={$seconds} on:change={() => forcedTimeChange()} min=0 max=6120>
-</p>
+    <br>
+    {#if !active}
+        <button on:click={runTimer}>Play</button>
+    {:else}
+        <button on:click={pauseTimer}>Pause</button>
+    {/if}
+        <button on:click={resetTimer}>Reset</button>
+        <button on:click={() => prevLocation()}>Prev</button>
+        <button on:click={() => nextLocation()}>Next</button>
+</div>
 
-<br>
-{#if !active}
-<button on:click={runTimer}>Play</button>
-{:else}
-<button on:click={pauseTimer}>Pause</button>
-{/if}
-<button on:click={resetTimer}>Reset</button>
-<button on:click={() => nextLocation()}>Next Location</button>
+<style>
+    input[type="range"]{
+        width: 100%;
+    }
+</style>
