@@ -3,20 +3,28 @@
 </script>
 
 <div class='info-container'>
-    <p>{$storedcurrent.name}</p>
-    <p>Location: {$storedcurrent.country}</p>
-    <img src='./{$storedcurrent.image}' alt='test'>
-    <p>{$storedcurrent.info}</p>
-<!--     <input bind:value={API_KEY}> -->
-    <img src='https://maps.googleapis.com/maps/api/staticmap?center=40.714%2c%20-73.998&zoom=12&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='map of location'>
+
+<div class='info'>
+    <h2>{$storedcurrent.name}</h2>
+    <h3>Location: {$storedcurrent.country}</h3>
+    <!-- <img src='./{$storedcurrent.image}' alt='test'> -->
+    <p>{@html $storedcurrent.info}</p>
+</div>
+
+<div class='map'>
+    <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.search}' target='_blank'><img src='https://maps.googleapis.com/maps/api/staticmap?markers={$storedcurrent.coordinates}&zoom=4&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='map of location'></a>
+</div>
+
 </div>
 
 <style>
 .info-container{
-    max-width: 900px;
+    display: flex;
+    width: 900px;
+    text-align: right;
 }
 
-img{
-    width: 50%;
+.info, .map{
+    flex: 1;
 }
 </style>

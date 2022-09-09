@@ -1,26 +1,15 @@
 import { writable } from 'svelte/store';
 
-const current = 
-{
-    name: 'Movie Start',
-    key: 0,
-    start: 0,
-    end: 3,
-    country:'None',
-    coordinates: [0,0],
-    info: '',
-    image: 'movieposter.jpg'
-}
-
 const locations = 
     [{
         name: 'Movie Start',
         key: 0,
         start: 0,
         end: 3,
-        country:'None',
-        coordinates: [0,0],
-        info: 'From Wikipedia: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985). Completed over a period of five years in 25 countries around the world, it was shot in 70 mm format and output to digital format. The film premiered at the 2011 Toronto International Film Festival and received a limited release in August 2012.',
+        country:'Start',
+        search: 'My+Location',
+        coordinates: '39.828300,-98.579500',
+        info: '<strong>From Wikipedia</strong>: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985).',
         image: 'movieposter.jpg'
     },
     {
@@ -29,8 +18,9 @@ const locations =
         start: 5,
         end: 8,
         country: 'Indonesia',
-        coordinates: [-8.585619926453, -8.585619926453],
-        info: 'Tri Pusaka Sakti Art Foundation http://pusakasaktiarts.com/',
+        search: 'Tri+Pusaka+Sakti+Arts+Foundation',
+        coordinates: '-8.584905070569567,115.27696765105229',
+        info: '<a href="http://pusakasaktiarts.com/" target="_blank">Tri Pusaka Sakti Art Foundation</a>',
         image: 'movieposter.jpg'
     },
     {
@@ -39,7 +29,8 @@ const locations =
         start: 10,
         end: 13,
         country:'Hawai\'i, Hawaii',
-        coordinates: [0, 0],
+        search: 'My+Location',
+        coordinates: '0,0',
         info: 'Pending...',
         image: 'movieposter.jpg'
     },
@@ -49,7 +40,8 @@ const locations =
         start: 15,
         end: 18,
         country:'Cairo, Egypt',
-        coordinates: [0, 0],
+        search: 'My+Location',
+        coordinates: '0,0',
         info: 'Pending...',
         image: 'movieposter.jpg'
     },
@@ -59,7 +51,8 @@ const locations =
         start: 20,
         end: 23,
         country:'Mount Popa, Myanmar',
-        coordinates: [0, 0],
+        search: 'My+Location',
+        coordinates: '0,0',
         info: 'Pending...',
         image: 'movieposter.jpg'
     },
@@ -69,7 +62,8 @@ const locations =
         start: 25,
         end: 28,
         country:'Old Bagan, Mandalay Region, Myanmar',
-        coordinates: [0, 0],
+        search: 'My+Location',
+        coordinates: '0,0',
         info: 'Pending...',
         image: 'movieposter.jpg'
     },
@@ -79,7 +73,8 @@ const locations =
         start: 30,
         end: 33,
         country:'Leh, Ladakh Territory, India',
-        coordinates: [0, 0],
+        search: 'My+Location',
+        coordinates: '0,0',
         info: 'Pending...',
         image: 'movieposter.jpg'
     },
@@ -89,13 +84,14 @@ const locations =
         start: 35,
         end: 38,
         country:'Adiyaman, Turkey',
-        coordinates: [0, 0],
+        search: 'My+Location',
+        coordinates: '0,0',
         info: 'Pending...',
         image: 'movieposter.jpg'
     }]
 
 export let seconds = writable(0)
-export let storedcurrent = writable(current)
+export let storedcurrent = writable(locations[0])
 export let storedlocations = writable(locations)
 
 export function formatTime(n){
