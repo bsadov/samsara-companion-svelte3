@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15,8 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
 }
-
-/* @import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');  */
 
 @font-face {
   font-family: 'Oregano';
