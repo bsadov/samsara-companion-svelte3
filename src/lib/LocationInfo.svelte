@@ -1,8 +1,10 @@
 <script>
     import { storedcurrent } from './stores.js'
+    import { fade } from 'svelte/transition';
 </script>
 
-<div class='info-container'>
+{#key $storedcurrent}
+<div class='info-container' in:fade={{duration: 1000}}>
 
 <div class='info'>
     <h2>{$storedcurrent.name}</h2>
@@ -16,6 +18,7 @@
 </div>
 
 </div>
+{/key}
 
 <style>
 .info-container{

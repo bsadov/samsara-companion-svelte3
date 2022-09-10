@@ -5,13 +5,11 @@
 
     let stopwatch
     let active = false
-    let visible = false;
-    let display = 'none';
-    let icon = 'url(/icons8-menu.png)'
+    let visible = false
+    let icon
 
     function expandMenu(){
     visible = !visible;
-    visible ? display = 'flex' : display = 'none';
     visible ? icon = 'url(/icons8-close.png)' : icon = 'url(/icons8-menu.png)';
     }
 
@@ -64,10 +62,10 @@
 </script>
 <div class='nav-container'>
     {#if visible}
-    <div class="timeline-menu" on:click={expandMenu} style="display: {display}" transition:fly="{{ x: -50, duration: 500 }}">
+        <div class="timeline-menu" on:click={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
         <Timeline /></div>
     {/if}
-    <button id='menu' on:click={expandMenu} style="background-image: {icon}"><span>Timeline Menu</span></button>
+    <button id='menu' on:click={expandMenu} style="background-image: {icon}"><span>Menu</span></button>
 
     {#if !active}
         <button id='play' on:click={runTimer}><span>Play</span></button>
@@ -85,14 +83,13 @@
 <style>
     .nav-container{
         background-color: white;
-        position: absolute;
+        position: fixed;
         display: flex;
         align-items: center;
-        bottom:0px;
+        bottom: 0px;
         width: 900px;
         border: 1px solid black;
         padding: 0 5px;
-        z-index: 2;
     }
 
     .timeline-menu {
@@ -106,12 +103,12 @@
         border-radius: 5px;
     }
 
-
     input[type="range"]{
         width: 100%;
     }
 
     button{
+        background-color: white;
         background-repeat: no-repeat;
         height: 25px;
         width: 25px;

@@ -1,6 +1,5 @@
 <script>
   import LocationInfo from './lib/LocationInfo.svelte'
-
   import Timer from './lib/Timer.svelte'
 </script>
 
