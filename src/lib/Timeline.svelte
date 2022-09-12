@@ -24,4 +24,9 @@ ul{
   text-align: left;
   list-style: none;
 }
+
+strong{
+  font-family: 'Oregano';
+  font-size: 1.2em;
+}
 </style>

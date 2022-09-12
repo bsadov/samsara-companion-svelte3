@@ -10,84 +10,76 @@ const locations =
         search: 'My+Location',
         coordinates: '39.828300,-98.579500',
         info: '<strong>From Wikipedia</strong>: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985).',
-        image: 'movieposter.jpg'
     },
     {
         name: 'Balinese Tari Legong Dancers',
         key: 1,
-        start: 5,
-        end: 8,
-        country: 'Indonesia',
+        start: 20,
+        end: 28,
+        country: 'Bali, Indonesia',
         search: 'Tri+Pusaka+Sakti+Arts+Foundation',
         coordinates: '-8.584905070569567,115.27696765105229',
-        info: '<a href="http://pusakasaktiarts.com/" target="_blank">Tri Pusaka Sakti Art Foundation</a>',
-        image: 'movieposter.jpg'
+        info: '<a href="https://pusakasaktiarts.com/" target="_blank">Tri Pusaka Sakti Art Foundation</a><br><a href="https://en.wikipedia.org/wiki/Legong" target="_blank">From Wikipedia: </a>Lelong is a form of Balinese dance. It is a refined dance form characterized by intricate finger movements, complicated footwork, and expressive gestures and facial expressions.',
     },
     {
         name: 'Kilauea Volcano',
         key: 2,
-        start: 10,
-        end: 13,
+        start: 110,
+        end: 118,
         country:'Hawai\'i, Hawaii',
         search: 'My+Location',
         coordinates: '0,0',
         info: 'Pending...',
-        image: 'movieposter.jpg'
     },
     {
         name: 'The Museum of Egyptian Antiquities',
         key: 3,
-        start: 15,
-        end: 18,
+        start: 270,
+        end: 278,
         country:'Cairo, Egypt',
         search: 'My+Location',
         coordinates: '0,0',
         info: 'Pending...',
-        image: 'movieposter.jpg'
     },
     {
         name: 'Taung Kalat Monastery',
         key: 4,
-        start: 20,
-        end: 23,
+        start: 335,
+        end: 343,
         country:'Mount Popa, Myanmar',
         search: 'My+Location',
         coordinates: '0,0',
         info: 'Pending...',
-        image: 'movieposter.jpg'
     },
     {
         name: 'Old Bagan',
         key: 5,
-        start: 25,
-        end: 28,
+        start: 351,
+        end: 359,
         country:'Old Bagan, Mandalay Region, Myanmar',
         search: 'My+Location',
         coordinates: '0,0',
         info: 'Pending...',
-        image: 'movieposter.jpg'
     },
     {
         name: 'Thiksey Monastery',
         key: 6,
-        start: 30,
-        end: 33,
+        start: 502,
+        end: 510,
         country:'Leh, Ladakh Territory, India',
         search: 'My+Location',
         coordinates: '0,0',
         info: 'Pending...',
-        image: 'movieposter.jpg'
     },
     {
         name: 'Mt. Nemrut National Park',
         key: 7,
-        start: 35,
-        end: 38,
+        start: 787,
+        end: 795,
         country:'Adiyaman, Turkey',
         search: 'My+Location',
         coordinates: '0,0',
         info: 'Pending...',
-        image: 'movieposter.jpg'
     }]
 
 export let seconds = writable(0)
@@ -104,7 +96,7 @@ export function formatTime(n){
 
 
 
-/* [00:00:20] - [00:00:28] Balinese Tari Legong dancers, Indonesia
+/* [00:00:20] - [00:00:28]** Balinese Tari Legong dancers, Indonesia
 [00:01:50] - [00:01:58] Kilauea Volcano, Hawaii
 [00:04:30] - [00:04:38] The Museum of Egyptian Antiquities
 [00:05:35] - [00:05:43] Popa Taungkalat Monastery, Bagan Myanmar

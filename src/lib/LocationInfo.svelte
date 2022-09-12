@@ -9,7 +9,6 @@
 <div class='info'>
     <h2>{$storedcurrent.name}</h2>
     <h3>Location: {$storedcurrent.country}</h3>
-    <!-- <img src='./{$storedcurrent.image}' alt='test'> -->
     <p>{@html $storedcurrent.info}</p>
 </div>
 
@@ -24,7 +23,9 @@
 .info-container{
     display: flex;
     width: 900px;
+    padding: .5em;
     text-align: right;
+    background-color: rgba(128, 128, 128, 0.2);
 }
 
 .info, .map{

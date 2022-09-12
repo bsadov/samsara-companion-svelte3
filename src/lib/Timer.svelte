@@ -15,7 +15,11 @@
 
     function runTimer(){
         active = true
-        stopwatch = setInterval(() => { $seconds += 1, checkLocation()}, 1000)
+        stopwatch = setInterval(() => { 
+            if($seconds <= 6120)
+            {$seconds += 1, checkLocation()}
+            else pauseTimer()
+        }, 1000)
     }
 
     function pauseTimer(){
@@ -76,8 +80,7 @@
     <button id='next'on:click={() => nextLocation()}><span>Next</span></button>
     <button id='reset' on:click={resetTimer}><span>Reset</span></button>
     <p>{formatTime($seconds)}</p>
-    <!-- <input type=number bind:value={$seconds} on:change={() => forcedTimeChange()} min=0 max=6120> -->
-    <input type=range bind:value={$seconds} on:input={() => forcedTimeChange()} min=0 max=35>
+    <input type=range bind:value={$seconds} on:input={() => forcedTimeChange()} min=0 max=6120>
 </div>
 
 <style>
