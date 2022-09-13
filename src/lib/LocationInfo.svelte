@@ -1,6 +1,6 @@
 <script>
     import { storedcurrent } from './stores.js'
-    import { fade } from 'svelte/transition';
+    import { fade } from 'svelte/transition'
 </script>
 
 {#key $storedcurrent}
@@ -8,12 +8,15 @@
 
 <div class='info'>
     <h2>{$storedcurrent.name}</h2>
-    <h3>Location: {$storedcurrent.country}</h3>
+    <h3>Location: {$storedcurrent.location}</h3>
     <p>{@html $storedcurrent.info}</p>
 </div>
-
 <div class='map'>
-    <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.search}' target='_blank'><img src='https://maps.googleapis.com/maps/api/staticmap?markers={$storedcurrent.coordinates}&zoom=4&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='map of location'></a>
+    {#if $storedcurrent.location == 'None'}
+        <img src='./placeholder.jpg' alt='placeholder'>
+    {:else}
+        <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.search}' target='_blank'><img src='https://maps.googleapis.com/maps/api/staticmap?markers={$storedcurrent.coordinates}&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='map of location'></a>
+    {/if} 
 </div>
 
 </div>

@@ -1,5 +1,5 @@
 <script>
-    import { seconds, storedcurrent, storedlocations, formatTime } from './stores.js'
+    import { seconds, storedcurrent, storedscenes, formatTime } from './stores.js'
     import Timeline from './Timeline.svelte'
     import { fly } from 'svelte/transition'
 
@@ -9,17 +9,15 @@
     let icon
 
     function expandMenu(){
-    visible = !visible;
-    visible ? icon = 'url(/icons8-close.png)' : icon = 'url(/icons8-menu.png)';
+    visible = !visible
+    visible ? icon = 'url(/icons8-close.png)' : icon = 'url(/icons8-menu.png)'
     }
 
     function runTimer(){
         active = true
         stopwatch = setInterval(() => { 
-            if($seconds <= 6120)
-            {$seconds += 1, checkLocation()}
-            else pauseTimer()
-        }, 1000)
+            if($seconds == 6120) pauseTimer()
+            else{$seconds += 1, checkLocation()}}, 1000)
     }
 
     function pauseTimer(){
@@ -31,19 +29,19 @@
         active = false
         clearInterval(stopwatch)
         $seconds = 0
-        $storedcurrent = $storedlocations[0]
+        $storedcurrent = $storedscenes[0]
     }
 
     function checkLocation(){
-        if($storedcurrent.key+1 < $storedlocations.length){
-            if($seconds == $storedlocations[$storedcurrent.key+1].start){
-                $storedcurrent = $storedlocations[$storedcurrent.key+1]
+        if($storedcurrent.key+1 < $storedscenes.length){
+            if($seconds == $storedscenes[$storedcurrent.key+1].start){
+                $storedcurrent = $storedscenes[$storedcurrent.key+1]
             }
         }
     }
 
     function forcedTimeChange(){
-        for(let location of $storedlocations){
+        for(let location of $storedscenes){
             if($seconds >= location.start && $seconds < location.end){
                 $storedcurrent = location
             }
@@ -52,14 +50,14 @@
 
     function prevLocation(){
         if($storedcurrent.key-1 >= 0){
-        $storedcurrent = $storedlocations[$storedcurrent.key-1]
+        $storedcurrent = $storedscenes[$storedcurrent.key-1]
             $seconds = $storedcurrent.start
         }
     }
 
     function nextLocation(){
-        if($storedcurrent.key+1 < $storedlocations.length){
-            $storedcurrent = $storedlocations[$storedcurrent.key+1]
+        if($storedcurrent.key+1 < $storedscenes.length){
+            $storedcurrent = $storedscenes[$storedcurrent.key+1]
             $seconds = $storedcurrent.start
         }
     }
@@ -86,12 +84,12 @@
 <style>
     .nav-container{
         background-color: white;
-        position: fixed;
+        position: relative;
         display: flex;
         align-items: center;
-        bottom: 0px;
+        top: 0px;
         width: 900px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         padding: 0 5px;
     }
 

@@ -1,90 +1,140 @@
-import { writable } from 'svelte/store';
+import { writable } from 'svelte/store'
 
-const locations = 
+const scenes = 
     [{
         name: 'Movie Start',
         key: 0,
         start: 0,
-        end: 3,
-        country:'Start',
-        search: 'My+Location',
-        coordinates: '39.828300,-98.579500',
+        end: 19,
+        location:'None',
+        search: 'None',
+        coordinates: 'None',
         info: '<strong>From Wikipedia</strong>: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985).',
     },
     {
         name: 'Balinese Tari Legong Dancers',
         key: 1,
         start: 20,
-        end: 28,
-        country: 'Bali, Indonesia',
+        end: 109,
+        location: 'Bali, Indonesia',
         search: 'Tri+Pusaka+Sakti+Arts+Foundation',
-        coordinates: '-8.584905070569567,115.27696765105229',
+        coordinates: '-8.584905,115.276968&zoom=4',
         info: '<a href="https://pusakasaktiarts.com/" target="_blank">Tri Pusaka Sakti Art Foundation</a><br><a href="https://en.wikipedia.org/wiki/Legong" target="_blank">From Wikipedia: </a>Lelong is a form of Balinese dance. It is a refined dance form characterized by intricate finger movements, complicated footwork, and expressive gestures and facial expressions.',
     },
     {
         name: 'Kilauea Volcano',
         key: 2,
         start: 110,
-        end: 118,
-        country:'Hawai\'i, Hawaii',
-        search: 'My+Location',
-        coordinates: '0,0',
-        info: 'Pending...',
+        end: 213,
+        location:'Hawai\'i, Hawaii',
+        search: 'Kīlauea+Volcano',
+        coordinates: '19.406280,-155.283678&zoom=6',
+        info: 'None',
     },
     {
-        name: 'The Museum of Egyptian Antiquities',
+        name: 'Unnamed Preserved Fetus',
         key: 3,
-        start: 270,
-        end: 278,
-        country:'Cairo, Egypt',
-        search: 'My+Location',
-        coordinates: '0,0',
-        info: 'Pending...',
+        start: 214,
+        end: 245,
+        location:'None',
+        search: 'None',
+        coordinates: 'None',
+        info: 'None',
+    },
+    {
+        name: 'Tollund Man',
+        key: 4,
+        start: 246,
+        end: 261,
+        location:'Silkeborg, Denmark',
+        search: 'Silkeborg+Museum+Hovedgården',
+        coordinates: '56.169070,9.552999&zoom=5',
+        info: 'Silkeborg Museum, Hovedgården',
+    },
+    {
+        name: 'Mask of Tutankhamun',
+        key: 5,
+        start: 262,
+        end: 290,
+        location:'Cairo, Egypt',
+        search: 'Museum+of+Egyptian+Antiquities&zoom=5',
+        coordinates: '30.048297,31.233638',
+        info: 'The Museum of Egyptian Antiquities',
+    },
+    {
+        name: 'Title Drop',
+        key: 6,
+        start: 291,
+        end: 314,
+        location:'None',
+        search: 'None',
+        coordinates: 'None',
+        info: 'None',
     },
     {
         name: 'Taung Kalat Monastery',
-        key: 4,
-        start: 335,
-        end: 343,
-        country:'Mount Popa, Myanmar',
-        search: 'My+Location',
-        coordinates: '0,0',
-        info: 'Pending...',
+        key: 7,
+        start: 315,
+        end: 350,
+        location:'Mount Popa, Myanmar',
+        search: 'Taung+Kalat+Monastery',
+        coordinates: '20.912974,95.208672&zoom=6',
+        info: 'None',
     },
     {
-        name: 'Old Bagan',
-        key: 5,
+        name: 'Bagan Archaeological Zone',
+        key: 8,
         start: 351,
-        end: 359,
-        country:'Old Bagan, Mandalay Region, Myanmar',
-        search: 'My+Location',
-        coordinates: '0,0',
-        info: 'Pending...',
+        end: 476,
+        location:'Old Bagan, Mandalay Region, Myanmar',
+        search: 'Bagan+Archaeological+Zone',
+        coordinates: '21.168226,94.856173&zoom=6',
+        info: 'None',
+    },
+    {
+        name: 'Statue of Maitreya Buddha',
+        key: 9,
+        start: 477,
+        end: 498,
+        location:'Thiksey, Ladakh Territory, India',
+        search: 'Thiksey+Monastery',
+        coordinates: '34.056964,77.666946&zoom=5',
+        info: 'Thiksey Monastery',
     },
     {
         name: 'Thiksey Monastery',
-        key: 6,
-        start: 502,
-        end: 510,
-        country:'Leh, Ladakh Territory, India',
-        search: 'My+Location',
-        coordinates: '0,0',
-        info: 'Pending...',
+        key: 10,
+        start: 499,
+        end: 555,
+        location:'Thiksey, Ladakh Territory, India',
+        search: 'Thiksey+Monastery',
+        coordinates: '34.056964,77.666946&zoom=6',
+        info: 'None',
     },
     {
-        name: 'Mt. Nemrut National Park',
-        key: 7,
-        start: 787,
-        end: 795,
-        country:'Adiyaman, Turkey',
-        search: 'My+Location',
-        coordinates: '0,0',
-        info: 'Pending...',
+        name: 'Je Tsongkhapa - Prayer Wheel',
+        key: 11,
+        start: 556,
+        end: 585,
+        location:'Thiksey, Ladakh Territory, India',
+        search: 'Thiksey+Monastery',
+        coordinates: '34.056964,77.666946&zoom=7',
+        info: 'Thiksey Monastery',
+    },
+    {
+        name: 'Sand mandala',
+        key: 12,
+        start: 586,
+        end: 730,
+        location:'Thiksey, Ladakh Territory, India',
+        search: 'Thiksey+Monastery',
+        coordinates: '34.056964,77.666946&zoom=8',
+        info: 'Thiksey Monastery',
     }]
 
 export let seconds = writable(0)
-export let storedcurrent = writable(locations[0])
-export let storedlocations = writable(locations)
+export let storedcurrent = writable(scenes[0])
+export let storedscenes = writable(scenes)
 
 export function formatTime(n){
     const h = Math.floor(n / 3600).toString().padStart(2,'0'),
@@ -97,11 +147,11 @@ export function formatTime(n){
 
 
 /* [00:00:20] - [00:00:28]** Balinese Tari Legong dancers, Indonesia
-[00:01:50] - [00:01:58] Kilauea Volcano, Hawaii
-[00:04:30] - [00:04:38] The Museum of Egyptian Antiquities
-[00:05:35] - [00:05:43] Popa Taungkalat Monastery, Bagan Myanmar
-[00:05:51] - [00:05:59] Bagan, Myanmar
-[00:08:22] - [00:08:30] Thiksey Monastery, Leh Ladakh India
+[00:01:50] - [00:01:58]** Kilauea Volcano, Hawaii
+[00:04:30] - [00:04:38]** The Museum of Egyptian Antiquities
+[00:05:35] - [00:05:43]** Popa Taungkalat Monastery, Bagan Myanmar
+[00:05:51] - [00:05:59]** Bagan, Myanmar
+[00:08:22] - [00:08:30]** Thiksey Monastery, Leh Ladakh India
 [00:13:07] - [00:13:15] Mt. Nemrut National Park, Adiyaman, Turkey
 [00:14:24] - [00:14:32] Petra,Jordan
 [00:15:10] - [00:15:18] Cappadocia,Turkey

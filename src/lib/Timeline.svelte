@@ -1,5 +1,5 @@
 <script>
-    import { seconds, storedcurrent, storedlocations, formatTime } from './stores.js'
+    import { seconds, storedcurrent, storedscenes, formatTime } from './stores.js'
 	  
     function selectLocation(location){
       $storedcurrent = location
@@ -8,12 +8,12 @@
 </script>
 
 <ul>
-  {#each $storedlocations as location}
-    <li on:click={() => selectLocation(location)}>
-      {#if $seconds >= location.start && $seconds < location.end}
-        <strong>[{formatTime(location.start)}] {location.name}</strong>
+  {#each $storedscenes as scene}
+    <li on:click={() => selectLocation(scene)}>
+      {#if $seconds >= scene.start && $seconds < scene.end}
+        <strong>[{formatTime(scene.start)}] {scene.name}</strong>
       {:else}
-        [{formatTime(location.start)}] {location.name}
+        [{formatTime(scene.start)}] {scene.name}
       {/if}
     </li>
   {/each}
