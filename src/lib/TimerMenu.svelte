@@ -1,9 +1,9 @@
 <script>
     import { seconds, storedcurrent, storedscenes, formatTime } from './stores.js'
-    import Timeline from './Timeline.svelte'
+    import ScenesMenu from './ScenesMenu.svelte'
     import { fly } from 'svelte/transition'
 
-    let stopwatch
+    let timer
     let active = false
     let visible = false
     let icon
@@ -15,19 +15,19 @@
 
     function runTimer(){
         active = true
-        stopwatch = setInterval(() => { 
+        timer = setInterval(() => { 
             if($seconds == 6120) pauseTimer()
             else{$seconds += 1, checkLocation()}}, 1000)
     }
 
     function pauseTimer(){
         active = false
-        clearInterval(stopwatch)
+        clearInterval(timer)
     }
 
     function resetTimer(){
         active = false
-        clearInterval(stopwatch)
+        clearInterval(timer)
         $seconds = 0
         $storedcurrent = $storedscenes[0]
     }
@@ -62,10 +62,11 @@
         }
     }
 </script>
+
 <div class='nav-container'>
     {#if visible}
         <div class="timeline-menu" on:click={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
-        <Timeline /></div>
+        <ScenesMenu /></div>
     {/if}
     <button id='menu' on:click={expandMenu} style="background-image: {icon}"><span>Menu</span></button>
 
@@ -102,6 +103,7 @@
         background-color: rgba(150, 150, 150);
         padding-right: 2em;
         border-radius: 5px;
+        overflow-y: scroll;
     }
 
     input[type="range"]{

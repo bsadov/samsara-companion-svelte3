@@ -1,15 +1,15 @@
 <script>
-  import LocationInfo from './lib/LocationInfo.svelte'
-  import Timer from './lib/Timer.svelte'
+  import SceneInfo from './lib/SceneInfo.svelte'
+  import TimerMenu from './lib/TimerMenu.svelte'
 </script>
 
 <nav>
-<Timer />
+<TimerMenu />
 </nav>
 
 <main>
 <h1>Samsara Companion</h1>
-<LocationInfo />
+<SceneInfo />
 </main>
 
 <footer>

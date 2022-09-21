@@ -12,10 +12,10 @@
     <p>{@html $storedcurrent.info}</p>
 </div>
 <div class='map'>
-    {#if $storedcurrent.location == 'None'}
+    {#if $storedcurrent.coordinates == 'None'}
         <img src='./placeholder.jpg' alt='placeholder'>
     {:else}
-        <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.search}' target='_blank'><img src='https://maps.googleapis.com/maps/api/staticmap?markers={$storedcurrent.coordinates}&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='map of location'></a>
+        <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.search}' target='_blank'><img src='https://maps.googleapis.com/maps/api/staticmap?markers={$storedcurrent.coordinates}&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='click for google maps'><br>click for full map (new tab)</a>
     {/if} 
 </div>
 
@@ -33,5 +33,9 @@
 
 .info, .map{
     flex: 1;
+}
+
+a {
+    font-size: .9em;
 }
 </style>
