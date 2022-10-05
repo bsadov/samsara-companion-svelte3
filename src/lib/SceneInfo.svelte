@@ -13,10 +13,10 @@
 </div>
 <div class='map'>
     {#if $storedcurrent.coordinates == 'None'}
-        <img src='./placeholder.jpg' alt='placeholder'>
+        <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.name}+{$storedcurrent.location}' target='_blank'><img src='./placeholder.jpg' alt='placeholder'><br>click for full map (new tab)</a>
     {:else}
         <a href='https://www.google.com/maps/search/?api=1&query={$storedcurrent.search}' target='_blank'><img src='https://maps.googleapis.com/maps/api/staticmap?markers={$storedcurrent.coordinates}&size=400x400&key={import.meta.env.VITE_API_KEY}' alt='click for google maps'><br>click for full map (new tab)</a>
-    {/if} 
+    {/if}
 </div>
 
 </div>
@@ -25,10 +25,11 @@
 <style>
 .info-container{
     display: flex;
-    width: 900px;
+    border-radius: 0 0 10px 10px;
+    max-width: 900px;
     padding: .5em;
     text-align: right;
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgba(62,62,62,255);
 }
 
 .info, .map{

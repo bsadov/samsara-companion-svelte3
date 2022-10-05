@@ -2,6 +2,7 @@
     import { seconds, storedcurrent, storedscenes, formatTime } from './stores.js'
     import ScenesMenu from './ScenesMenu.svelte'
     import { fly } from 'svelte/transition'
+    import {clickOutside} from './clickOutside.js';
 
     let timer
     let active = false
@@ -10,7 +11,7 @@
 
     function expandMenu(){
     visible = !visible
-    visible ? icon = 'url(/icons8-close.png)' : icon = 'url(/icons8-menu.png)'
+    visible ? icon = 'url(/close.png)' : icon = 'url(/menu.png)'
     }
 
     function runTimer(){
@@ -65,7 +66,7 @@
 
 <div class='nav-container'>
     {#if visible}
-        <div class="timeline-menu" on:click={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
+        <div class="timeline-menu" use:clickOutside on:click_outside={expandMenu} on:click={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
         <ScenesMenu /></div>
     {/if}
     <button id='menu' on:click={expandMenu} style="background-image: {icon}"><span>Menu</span></button>
@@ -84,7 +85,7 @@
 
 <style>
     .nav-container{
-        background-color: white;
+        background-color: rgba(25,25,25,255);
         position: relative;
         display: flex;
         align-items: center;
@@ -100,7 +101,7 @@
         left: 0;
         height: 100%;
         color: white;
-        background-color: rgba(150, 150, 150);
+        background-color: rgba(62,62,62,255);
         padding-right: 2em;
         border-radius: 5px;
         overflow-y: scroll;
@@ -111,7 +112,7 @@
     }
 
     button{
-        background-color: white;
+        background-color: rgba(25,25,25,255);
         background-repeat: no-repeat;
         height: 25px;
         width: 25px;
@@ -119,27 +120,27 @@
     }
 
     #menu {
-        background-image: url(/icons8-menu.png);
+        background-image: url(/menu.png);
     }
 
     #play {
-        background-image: url(/icons8-play.png);
+        background-image: url(/play.png);
     }
 
     #pause{
-        background-image: url(/icons8-pause.png);
+        background-image: url(/pause.png);
     }
 
     #reset{
-        background-image: url(/icons8-stop.png);
+        background-image: url(/stop.png);
     }
 
     #prev{
-        background-image: url(/icons8-prev.png);
+        background-image: url(/prev.png);
     }
 
     #next{
-        background-image: url(/icons8-next.png);
+        background-image: url(/next.png);
     }
 
     button span{

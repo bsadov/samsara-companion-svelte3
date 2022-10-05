@@ -8,8 +8,8 @@
 </nav>
 
 <main>
-<h1>Samsara Companion</h1>
 <SceneInfo />
+<h1 class=title>Samsara Companion</h1>
 </main>
 
 <footer>

@@ -17,7 +17,7 @@ const scenes =
         location:'None',
         search: 'None',
         coordinates: 'None',
-        info: '<strong>From Wikipedia</strong>: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985).',
+        info: '<b>From Wikipedia</b>: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985).',
     },
     {
         name: 'Balinese Tari Legong Dancers',

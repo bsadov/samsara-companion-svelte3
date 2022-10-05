@@ -9,9 +9,9 @@
 
 <ul>
   {#each $storedscenes as scene}
-    <li on:click={() => selectLocation(scene)}>
-      {#if $seconds >= scene.start && $seconds < scene.end}
-        <strong>[{formatTime(scene.start)}] {scene.name}</strong>
+    <li tabindex="0" on:click={() => selectLocation(scene)}>
+      {#if $storedcurrent == scene}
+        <b>[{formatTime(scene.start)}] {scene.name}</b>
       {:else}
         [{formatTime(scene.start)}] {scene.name}
       {/if}
@@ -25,7 +25,7 @@ ul{
   list-style: none;
 }
 
-strong{
+b{
   font-family: 'Oregano';
   font-size: 1.2em;
 }
