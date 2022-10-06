@@ -11,7 +11,7 @@
 
     function expandMenu(){
     visible = !visible
-    visible ? icon = 'url(/close.png)' : icon = 'url(/menu.png)'
+    /* visible ? icon = 'url(/icon-close.png)' : icon = 'url(/icon-menu.png)' */
     }
 
     function runTimer(){
@@ -120,27 +120,27 @@
     }
 
     #menu {
-        background-image: url(/menu.png);
+        background-image: url(/icon-menu.png);
     }
 
     #play {
-        background-image: url(/play.png);
+        background-image: url(/icon-play.png);
     }
 
     #pause{
-        background-image: url(/pause.png);
+        background-image: url(/icon-pause.png);
     }
 
     #reset{
-        background-image: url(/stop.png);
+        background-image: url(/icon-stop.png);
     }
 
     #prev{
-        background-image: url(/prev.png);
+        background-image: url(/icon-prev.png);
     }
 
     #next{
-        background-image: url(/next.png);
+        background-image: url(/icon-next.png);
     }
 
     button span{

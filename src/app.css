@@ -41,12 +41,16 @@ body {
   background: rgba(25,25,25,255);
 }
 
-/* main{
-  box-shadow: 1px 2px 10px grey;
+main{
+  height: 94vh;
+/*   box-shadow: 1px 2px 10px grey;
   border-radius: 0 0 10px;
-  height: 100%;
   background-color: rgba(130, 255, 140, 0.2);
-  padding: 5px;
+  padding: 5px; */
+}
+
+/*  * {
+  outline: 1px solid red;
 } */
 
 .title{
