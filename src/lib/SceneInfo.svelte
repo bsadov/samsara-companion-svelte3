@@ -8,7 +8,7 @@
 
 <div class='info'>
     <h2>{$storedcurrent.name}</h2>
-    <h3>Location: {$storedcurrent.location}</h3>
+    <h3><span style="color:lightblue">Location: </span>{$storedcurrent.location}</h3>
     <p>{@html $storedcurrent.info}</p>
 </div>
 <div class='map'>
@@ -26,7 +26,8 @@
 .info-container{
     display: flex;
     border-radius: 0 0 10px 10px;
-    max-width: 900px;
+    min-height: 450px;
+    width: 900px;
     padding: .5em;
     text-align: right;
     background-color: rgba(62,62,62,255);
@@ -34,6 +35,10 @@
 
 .info, .map{
     flex: 1;
+}
+
+h2{
+    color: lightblue;
 }
 
 a {

@@ -11,7 +11,7 @@
   {#each $storedscenes as scene}
     <li tabindex="0" on:click={() => selectLocation(scene)}>
       {#if $storedcurrent == scene}
-        <b>[{formatTime(scene.start)}] {scene.name}</b>
+        [{formatTime(scene.start)}] <b>{scene.name}</b>
       {:else}
         [{formatTime(scene.start)}] {scene.name}
       {/if}
@@ -28,5 +28,6 @@ ul{
 b{
   font-family: 'Oregano';
   font-size: 1.2em;
+  color: lightblue
 }
 </style>
