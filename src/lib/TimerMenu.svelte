@@ -114,8 +114,8 @@
     button{
         background-color: rgba(25,25,25,255);
         background-repeat: no-repeat;
-        height: 48px;
-        width: 48px;
+        background-position: center;
+        background-size: 100%;
         border: none;
     }
 
