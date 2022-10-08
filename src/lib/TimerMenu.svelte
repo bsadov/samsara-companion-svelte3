@@ -11,7 +11,7 @@
 
     function expandMenu(){
     visible = !visible
-    /* visible ? icon = 'url(/icon-close.png)' : icon = 'url(/icon-menu.png)' */
+    /* visible ? icon = 'url(/icon-close.svg)' : icon = 'url(/icon-menu.svg)' */
     }
 
     function runTimer(){
@@ -114,33 +114,33 @@
     button{
         background-color: rgba(25,25,25,255);
         background-repeat: no-repeat;
-        height: 25px;
-        width: 25px;
+        height: 48px;
+        width: 48px;
         border: none;
     }
 
     #menu {
-        background-image: url(/icon-menu.png);
+        background-image: url(/icon-menu.svg);
     }
 
     #play {
-        background-image: url(/icon-play.png);
+        background-image: url(/icon-play.svg);
     }
 
     #pause{
-        background-image: url(/icon-pause.png);
+        background-image: url(/icon-pause.svg);
     }
 
     #reset{
-        background-image: url(/icon-stop.png);
+        background-image: url(/icon-stop.svg);
     }
 
     #prev{
-        background-image: url(/icon-prev.png);
+        background-image: url(/icon-prev.svg);
     }
 
     #next{
-        background-image: url(/icon-next.png);
+        background-image: url(/icon-next.svg);
     }
 
     button span{

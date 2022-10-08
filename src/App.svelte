@@ -13,5 +13,5 @@
 </main>
 
 <footer>
-<p>@<a href="https://twitter.com/bsadov" alt="link to twitter page" target="_blank">bsadov</a>&nbsp;2022 | icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+<p>@<a href="https://twitter.com/bsadov" alt="link to twitter page" target="_blank">bsadov</a>&nbsp;2022</p>
 </footer>
