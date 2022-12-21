@@ -1,0 +1,1018 @@
+{
+  "Movie Start": {
+    "start": 0,
+    "end": 19,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "<b>From Wikipedia</b>: Samsara is a 2011 American non-narrative documentary film of international imagery directed by Ron Fricke and produced by Mark Magidson, who also collaborated on Baraka (1992), a film of a similar vein, and Chronos (1985)."
+  },
+  "Balinese Tari Legong Dancers": {
+    "start": 20,
+    "end": 109,
+    "location": "Bali, Indonesia",
+    "search": "Tri+Pusaka+Sakti+Arts+Foundation",
+    "coordinates": "-8.584905,115.276968&zoom=4",
+    "info": "<a href=\"https://pusakasaktiarts.com/\" target=\"_blank\">Tri Pusaka Sakti Art Foundation</a><br><a href=\"https://en.wikipedia.org/wiki/Legong\" target=\"_blank\">From Wikipedia: </a>Lelong is a form of Balinese dance. It is a refined dance form characterized by intricate finger movements, complicated footwork, and expressive gestures and facial expressions."
+  },
+  "Kilauea Volcano": {
+    "start": 110,
+    "end": 213,
+    "location": "Hawai'i, Hawaii",
+    "search": "Kīlauea+Volcano",
+    "coordinates": "19.406280,-155.283678&zoom=6",
+    "info": "None"
+  },
+  "Preserved Baby/Fetus (Pending)": {
+    "start": 214,
+    "end": 245,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Tollund Man": {
+    "start": 246,
+    "end": 261,
+    "location": "Silkeborg, Denmark",
+    "search": "Silkeborg+Museum+Hovedgården",
+    "coordinates": "56.169070,9.552999&zoom=5",
+    "info": "Silkeborg Museum, Hovedgården"
+  },
+  "Mask of Tutankhamun": {
+    "start": 262,
+    "end": 290,
+    "location": "Cairo, Egypt",
+    "search": "Museum+of+Egyptian+Antiquities&zoom=5",
+    "coordinates": "30.048297,31.233638",
+    "info": "The Museum of Egyptian Antiquities"
+  },
+  "Title Drop - SAMSARA": {
+    "start": 291,
+    "end": 314,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Taung Kalat Monastery": {
+    "start": 315,
+    "end": 350,
+    "location": "Mount Popa, Myanmar",
+    "search": "Taung+Kalat+Monastery",
+    "coordinates": "20.912974,95.208672&zoom=6",
+    "info": "None"
+  },
+  "Bagan Archaeological Zone": {
+    "start": 351,
+    "end": 476,
+    "location": "Old Bagan, Mandalay Region, Myanmar",
+    "search": "Bagan+Archaeological+Zone",
+    "coordinates": "21.168226,94.856173&zoom=6",
+    "info": "None"
+  },
+  "Statue of Maitreya Buddha": {
+    "start": 477,
+    "end": 498,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=5",
+    "info": "Thiksey Monastery"
+  },
+  "Thiksey Monastery": {
+    "start": 499,
+    "end": 555,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=6",
+    "info": "None"
+  },
+  "Je Tsongkhapa/Prayer Wheel": {
+    "start": 556,
+    "end": 585,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=7",
+    "info": "Thiksey Monastery"
+  },
+  "Tibetan Sand Mandala": {
+    "start": 586,
+    "end": 730,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=8",
+    "info": "Thiksey Monastery"
+  },
+  "1000 Hands Dance": {
+    "start": 731,
+    "end": 753,
+    "location": "Beijing, China",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Desert (Pending)": {
+    "start": 754,
+    "end": 787,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mt. Nemrut National Park": {
+    "start": 788,
+    "end": 861,
+    "location": "Adiyaman, Turkey",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Petra, Jordan": {
+    "start": 862,
+    "end": 909,
+    "location": "Petra, Jordan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Goreme Open Air Museum": {
+    "start": 910,
+    "end": 932,
+    "location": "Cappadocia, Turkey",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Bandiagara Escarpment": {
+    "start": 933,
+    "end": 965,
+    "location": "Dogon Village, Mali",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Kolmanskop, Namibia": {
+    "start": 966,
+    "end": 1050,
+    "location": "Kolmanskop, Namibia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Ninth Ward, New Orleans": {
+    "start": 1051,
+    "end": 1171,
+    "location": "New Orleans, Louisiana, USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "The Hall of Mirrors": {
+    "start": 1172,
+    "end": 1218,
+    "location": "Versailles, France",
+    "search": null,
+    "coordinates": null,
+    "info": "Palace of Versailles"
+  },
+  "Painting (Pending)": {
+    "start": 1219,
+    "end": 1250,
+    "location": "Versailles, France",
+    "search": null,
+    "coordinates": null,
+    "info": "Palace of Versailles"
+  },
+  "Divino Salvador Church": {
+    "start": 1251,
+    "end": 1303,
+    "location": "São Paulo, Brazil",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Reims Cathedral": {
+    "start": 1304,
+    "end": 1336,
+    "location": "Reims, France",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Notre Dame Cathedral": {
+    "start": 1337,
+    "end": 1352,
+    "location": "Paris, France",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Statues (Pending)": {
+    "start": 1353,
+    "end": 1381,
+    "location": "Paris, France",
+    "search": null,
+    "coordinates": null,
+    "info": "Notre Dame Cathedral"
+  },
+  "Rosalia Lombardo": {
+    "start": 1382,
+    "end": 1409,
+    "location": "Palermo, Sicily, Italy",
+    "search": null,
+    "coordinates": null,
+    "info": "Capuchin Catacombs of Palermo"
+  },
+  "Sainte-Chapelle": {
+    "start": 1410,
+    "end": 1430,
+    "location": "Paris, France",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mont-Saint-Michel": {
+    "start": 1431,
+    "end": 1456,
+    "location": "Normandy, France",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Namib-Naukluft National Park": {
+    "start": 1457,
+    "end": 1511,
+    "location": "Sossusvlei, Namibia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Ancient Bristlecone Pine Forest": {
+    "start": 1512,
+    "end": 1528,
+    "location": "Bishop, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Unnamed Mountain": {
+    "start": 1529,
+    "end": 1560,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mont Blanc": {
+    "start": 1561,
+    "end": 1633,
+    "location": "Alps, Europe",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mono Basin National Scenic Area": {
+    "start": 1634,
+    "end": 1688,
+    "location": "Mono Lake, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Arches National Park": {
+    "start": 1689,
+    "end": 1717,
+    "location": "Utah, USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Hunt's Mesa, Monument Valley": {
+    "start": 1718,
+    "end": 1729,
+    "location": "Arizona, USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Antelope Canyon": {
+    "start": 1730,
+    "end": 1783,
+    "location": "Arizona, USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Epupa Falls": {
+    "start": 1784,
+    "end": 1832,
+    "location": "Epupa, Namibia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mursi Village": {
+    "start": 1833,
+    "end": 1900,
+    "location": "Omo Valley, Ethiopia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Himba Village": {
+    "start": 1901,
+    "end": 2019,
+    "location": "Kunene, Namibia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Los Angeles Highways (Pending)": {
+    "start": 2020,
+    "end": 2049,
+    "location": "California, USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Tattooed Dad": {
+    "start": 2050,
+    "end": 2092,
+    "location": "USA",
+    "search": null,
+    "coordinates": null,
+    "info": "Marcos Luna"
+  },
+  "Los Angeles Skyline": {
+    "start": 2093,
+    "end": 2141,
+    "location": "California, USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "(Pending) Highway": {
+    "start": 2142,
+    "end": 2160,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "(Pending) Skyline": {
+    "start": 2161,
+    "end": 2178,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Hiroshi Ishiguro Robot Clone": {
+    "start": 2179,
+    "end": 2216,
+    "location": "Osaka University, Suita, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Office (Pending)": {
+    "start": 2217,
+    "end": 2236,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Female Robot": {
+    "start": 2237,
+    "end": 2244,
+    "location": "Osaka University, Suita, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Oliver De Sagazan Performance": {
+    "start": 2245,
+    "end": 2387,
+    "location": "Paris, France",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Female Robot Pt.2": {
+    "start": 2388,
+    "end": 2395,
+    "location": "Osaka University, Suita, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "(Pending) Highway/Bridge": {
+    "start": 2396,
+    "end": 2402,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "Shanghai(?)"
+  },
+  "Toshimaen/Hydropolis": {
+    "start": 2403,
+    "end": 2409,
+    "location": "Tokyo, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Lotte Kasai Golf": {
+    "start": 2410,
+    "end": 2424,
+    "location": "Chiba, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "YMCA Los Angeles (Pending)": {
+    "start": 2425,
+    "end": 2433,
+    "location": "Los Angeles, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Ski Dubai": {
+    "start": 2434,
+    "end": 2466,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mosque/Burj Al Arab Hotel": {
+    "start": 2467,
+    "end": 2478,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Dubai Skyline/Burj Khalifa": {
+    "start": 2479,
+    "end": 2498,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "The World Islands": {
+    "start": 2499,
+    "end": 2532,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Palm Island Development": {
+    "start": 2533,
+    "end": 2572,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Burj Al Arab Hotel": {
+    "start": 2573,
+    "end": 2598,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "The Waterfall - Dubai Mall": {
+    "start": 2599,
+    "end": 2617,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Dubai Skyline/Burj Khalifa Pt.2": {
+    "start": 2618,
+    "end": 2660,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Niqab - Dubai Mall": {
+    "start": 2661,
+    "end": 2675,
+    "location": "Dubai, United Arab Emirates",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Galleria Vittorio Emanuele II": {
+    "start": 2676,
+    "end": 2684,
+    "location": "Milan, Italy",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Teatro alla Scala": {
+    "start": 2685,
+    "end": 2720,
+    "location": "Milan, Italy",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Shibuya Crossing": {
+    "start": 2721,
+    "end": 2727,
+    "location": "Tokyo, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Tokyo Metro (Pending)": {
+    "start": 2728,
+    "end": 2751,
+    "location": "Tokyo, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Yoyogi Park/Metro": {
+    "start": 2752,
+    "end": 2784,
+    "location": "Tokyo, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "São Paulo Metro": {
+    "start": 2785,
+    "end": 2803,
+    "location": "São Paulo, Brazil",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Tattooed Couple (Pending)": {
+    "start": 2804,
+    "end": 2815,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "São Paulo Metro Pt.2": {
+    "start": 2816,
+    "end": 2823,
+    "location": "São Paulo, Brazil",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Factory City China": {
+    "start": 2824,
+    "end": 2924,
+    "location": "Zhangzhou, Fujian, China",
+    "search": "24.495000+117.939000",
+    "coordinates": "24.495000,117.939000&zoom=6",
+    "info": "None"
+  },
+  "Hyundai Glovis Shipyards": {
+    "start": 2925,
+    "end": 2937,
+    "location": "Seoul, South Korea",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Aadlen Bros Auto Wrecking": {
+    "start": 2938,
+    "end": 2948,
+    "location": "Sun Valley, Los Angeles, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Electronic Recyclers International": {
+    "start": 2949,
+    "end": 2996,
+    "location": "Fresno, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Dumpling Factory (Pending)": {
+    "start": 2997,
+    "end": 3050,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Poultry Facility (China)": {
+    "start": 3051,
+    "end": 3057,
+    "location": "Changchun City, China",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mariesminde Poultry Farm": {
+    "start": 3058,
+    "end": 3111,
+    "location": "Denmark",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Poultry Facility (China) Pt.2": {
+    "start": 3112,
+    "end": 3175,
+    "location": "Changchun City, China",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Johann Dairy": {
+    "start": 3176,
+    "end": 3227,
+    "location": "Fresno, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Pork Processing Farm (Pending)": {
+    "start": 3228,
+    "end": 3328,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Costco (Big-box Store)": {
+    "start": 3329,
+    "end": 3381,
+    "location": "Van Nuys, Los Angeles, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Burger King": {
+    "start": 3382,
+    "end": 3404,
+    "location": "Long Beach, California",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Surgery (Pending)": {
+    "start": 3405,
+    "end": 3437,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "YK Tsuchiya Shokai Doll Factory": {
+    "start": 3438,
+    "end": 3506,
+    "location": "Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Cascade Go-Go Bar": {
+    "start": 3507,
+    "end": 3602,
+    "location": "Nana Plaza, Bangkok",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Fushimi Inari Shrine": {
+    "start": 3603,
+    "end": 3635,
+    "location": "Kyoto, Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Dolls (Pending)": {
+    "start": 3636,
+    "end": 3649,
+    "location": "Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Geisha (Pending)": {
+    "start": 3650,
+    "end": 3683,
+    "location": "Japan",
+    "search": null,
+    "coordinates": null,
+    "info": "Kikumaru Geisha"
+  },
+  "Shanghai Skyline": {
+    "start": 3684,
+    "end": 3701,
+    "location": "Shanghai, China",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Manila Slums": {
+    "start": 3702,
+    "end": 3777,
+    "location": "Manila, Philippines",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Paraisópolis Favela": {
+    "start": 3778,
+    "end": 3820,
+    "location": "São Paulo, Brazil",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Cebu Province Detention Center": {
+    "start": 3821,
+    "end": 3999,
+    "location": "Cebu City, Philippines",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "São Paulo Skyline": {
+    "start": 4000,
+    "end": 4037,
+    "location": "São Paulo, Brazil",
+    "search": "Condomínio+Edifício+Roof+São+Paulo",
+    "coordinates": "-23.614349,-46.730951&zoom=10",
+    "info": "Condomínio Edifício Roof"
+  },
+  "Payatas Trash Dump": {
+    "start": 4038,
+    "end": 4111,
+    "location": "Quezon City, Philippines",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Kawah Ijen Sulfur Mine": {
+    "start": 4112,
+    "end": 4223,
+    "location": "Java, Indonesia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Streets of Osu (Pending)": {
+    "start": 4224,
+    "end": 4256,
+    "location": "Accra, Ghana",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Slums of Sodom and Gomorrah": {
+    "start": 4257,
+    "end": 4321,
+    "location": "Accra, Ghana",
+    "search": null,
+    "coordinates": null,
+    "info": "World's Largest Digital Dump"
+  },
+  "Kane Kwei Coffin Shop": {
+    "start": 4322,
+    "end": 4365,
+    "location": "Accra, Ghana",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Funeral/Cemetery (Pending)": {
+    "start": 4366,
+    "end": 4420,
+    "location": "Accra, Ghana",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Arms Corporation of the Philippines": {
+    "start": 4421,
+    "end": 4468,
+    "location": "Marikina, Philippines",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mursi Village Pt.2": {
+    "start": 4469,
+    "end": 4523,
+    "location": "Omo Valley, Ethiopia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Family with Guns": {
+    "start": 4524,
+    "end": 4564,
+    "location": "USA",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Ammunition Facility (Pending)": {
+    "start": 4565,
+    "end": 4595,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Veteran (LA National Cemetery)": {
+    "start": 4596,
+    "end": 4624,
+    "location": "Los Angeles, California",
+    "search": null,
+    "coordinates": null,
+    "info": "Staff Sergeant Robert Henline"
+  },
+  "Military Parade": {
+    "start": 4625,
+    "end": 4694,
+    "location": "South Korea",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Tagou Martial Arts School": {
+    "start": 4695,
+    "end": 4738,
+    "location": "Zhengzhou, China",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Demilitarized Zone": {
+    "start": 4739,
+    "end": 4781,
+    "location": "Panmunjom, South Korea",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Nablus Checkpoint, West Bank": {
+    "start": 4782,
+    "end": 4880,
+    "location": "West Bank, Israel",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Bethlehem Skyline": {
+    "start": 4881,
+    "end": 4918,
+    "location": "Bethlehem, Israel",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Wailing Wall": {
+    "start": 4919,
+    "end": 4973,
+    "location": "Jerusalem, Israel",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Great Mosque of Djenne": {
+    "start": 4974,
+    "end": 5008,
+    "location": "Mali",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "City of the Dead": {
+    "start": 5009,
+    "end": 5017,
+    "location": "Cairo, Egypt",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "City of Giza and Great Pyramids": {
+    "start": 5018,
+    "end": 5087,
+    "location": "Giza, Egypt",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mosque of Sultanahmet (Exterior)": {
+    "start": 5088,
+    "end": 5108,
+    "location": "Istanbul, Turkey",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mosque of Sultanahmet (Interior)": {
+    "start": 5109,
+    "end": 5127,
+    "location": "Istanbul, Turkey",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Masjid Al-Haram": {
+    "start": 5128,
+    "end": 5290,
+    "location": "Mecca, Saudi Arabia",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Church (Pending)": {
+    "start": 5291,
+    "end": 5361,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Statue of Maitreya Buddha Pt.2": {
+    "start": 5362,
+    "end": 5375,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Mingun Temple": {
+    "start": 5376,
+    "end": 5415,
+    "location": "Myanmar",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Thiksey Monastery (Instrument)": {
+    "start": 5416,
+    "end": 5445,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=6",
+    "info": "None"
+  },
+  "Sand Mandala Destruction Ritual": {
+    "start": 5446,
+    "end": 5533,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=6",
+    "info": "None"
+  },
+  "Statue of Maitreya Buddha Pt.3": {
+    "start": 5446,
+    "end": 5554,
+    "location": "Thiksey, Ladakh Territory, India",
+    "search": "Thiksey+Monastery",
+    "coordinates": "34.056964,77.666946&zoom=6",
+    "info": "None"
+  },
+  "1000 Hands Dance Pt.2": {
+    "start": 5555,
+    "end": 5682,
+    "location": "Beijing, China",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "Desert Pt.2": {
+    "start": 5683,
+    "end": 5716,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  },
+  "CREDITS": {
+    "start": 5717,
+    "end": 6125,
+    "location": "None",
+    "search": null,
+    "coordinates": null,
+    "info": "None"
+  }
+}
