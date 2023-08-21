@@ -14,8 +14,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../public/fonts/Oregano-Regular.woff2') format('woff2'),
-       url('../public/fonts/Oregano-Regular.woff') format('woff');
+       url('/fonts/Oregano-Regular.woff2') format('woff2'),
+       url('/fonts/Oregano-Regular.woff') format('woff');
 }
 
 a {

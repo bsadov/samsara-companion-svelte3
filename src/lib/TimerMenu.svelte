@@ -66,24 +66,24 @@
 
 <div class='nav-container'>
     {#if visible}
-        <div class="timeline-menu" use:clickOutside on:click_outside={expandMenu} on:click={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
+        <div class="timeline-menu" use:clickOutside on:click_outside={expandMenu} on:click={expandMenu} on:keypress={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
         <ScenesMenu /></div>
     {/if}
-    <button id='menu' on:click={expandMenu} style="background-image: {icon}"><span>Menu</span></button>
+    <button id='menu' on:click={expandMenu} on:keypress={expandMenu} style="background-image: {icon}"><span>Menu</span></button>
 
     {#if !active}
-        <button id='play' on:click={runTimer}><span>Play</span></button>
+        <button id='play' on:click={runTimer} on:keypress={runTimer}><span>Play</span></button>
     {:else}
-        <button id='pause' on:click={pauseTimer}><span>Pause</span></button>
+        <button id='pause' on:click={pauseTimer} on:keypress={pauseTimer}><span>Pause</span></button>
     {/if}
-    <button id='prev'on:click={() => prevLocation()}><span>Prev</span></button>
-    <button id='next'on:click={() => nextLocation()}><span>Next</span></button>
-    <button id='reset' on:click={resetTimer}><span>Reset</span></button>
+    <button id='prev'on:click={() => prevLocation()} on:keypress={() => prevLocation()}><span>Prev</span></button>
+    <button id='next'on:click={() => nextLocation()} on:keypress={() => nextLocation()}><span>Next</span></button>
+    <button id='reset' on:click={resetTimer} on:keypress={resetTimer}><span>Reset</span></button>
     <p>{formatTime($seconds)}</p>
     <input type=range bind:value={$seconds} on:input={() => forcedTimeChange()} min=0 max=6120>
 </div>
 
-<style>
+<style>     
     .nav-container{
         background-color: rgba(25,25,25,255);
         position: relative;

@@ -9,7 +9,7 @@
 
 <ul>
   {#each $storedscenes as scene}
-    <li tabindex="0" on:click={() => selectLocation(scene)}>
+    <li tabindex="-1" on:click={() => selectLocation(scene)} on:keypress={() => selectLocation(scene)}>
       {#if $storedcurrent == scene}
         [{formatTime(scene.start)}] <b>{scene.name}</b>
       {:else}
